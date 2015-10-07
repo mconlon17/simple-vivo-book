@@ -1,6 +1,10 @@
 # Locations 
 
-VIVO can store information about locations such as cities, buildings, and campuses.  One Simple VIVO definition can
+VIVO can store information about locations such as cities, buildings, and campuses.  By providing latitude
+and longitude information for your locations you will be able to make maps and show information based on 
+location.  
+
+One Simple VIVO definition can
 be used to manage all your locations, or you may choose to use source files specific to different kinds of locations -- 
 one for cities, one for buildings, one for campuses.
 
@@ -10,7 +14,8 @@ Regardless of the type of location, each location has:
 
 1. a name
 1. one or more types such as building, campus, country or city
-1. within -- an indication that one location is within another.  For example, a city is within a country, a building is 
+1. within -- an indication that one location is within another.  For example, a city is within a country, a 
+building is 
 within a campus.
 1. latitude.  Negative is south.
 1. longitude.  Negative is west.
@@ -20,12 +25,8 @@ We can use one Simple VIVO scenario to manage all of our locations.
 1. See `locations.txt` for sample locations.  
 1. Using a spreadsheet, edit this file to remove locations that you do not wish to have in your VIVO.
 1. Add locations of interest for your VIVO.
-1. Run 
-    python sv.py -a update
-   to put locations in your VIVO.
-1. Use
-    python sv.py -a get
-   to get a spreadsheet of all the locations currently in your VIVO.
+1. Run `python sv.py -a update` to put locations in your VIVO.
+1. Use `python sv.py -a get`  to get a spreadsheet of all the locations currently in your VIVO.
    
 That's it.
 

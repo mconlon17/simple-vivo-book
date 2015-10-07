@@ -1,13 +1,14 @@
 # Managing Teaching in Simple VIVO
 
-To manage teaching in Simple VIVO, you will need to manage a list of courses and specify teaching -- who taught what when.
+To manage teaching in Simple VIVO, you will need to manage a list of courses, and you will need to specify 
+teaching -- who taught what when.
 
 Each is described below.
 
 ## Courses
 
 Managing a list of courses is easy.  Courses have two columns -- the name of the course and the concepts of the 
-course.  If your courses  have course numbers, you may want to include them in the name of the course.  So, for 
+course.  If your courses have course numbers, you may want to include them in the name of the course.  So, for 
 example, if the name of
 your course is "Introduction to Statistics" and the course number is "STA 1201," you may want to have the name in 
 VIVO be "STA 1201 Introduction to Statistics"

@@ -1,3 +1,3 @@
 # Managing Mentoring Relationships
 
-mentoring relationships between mentors and mentees.  Any context.
+Mentoring relationships between mentors and mentees.  Any context.

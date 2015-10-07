@@ -1,6 +1,6 @@
 # Managing Journals in Simple VIVO
 
-Journals a re fundamental entity for VIVO.  To add publications to VIVO using Simple VIVO, the journals for the
+Journals are a foundational entity for VIVO.  To add publications to VIVO using Simple VIVO, the journals for the
 publications must already be present in your VIVO.  You will want to load your VIVO with journal titles and add
 journals as required for your publications.
 

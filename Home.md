@@ -22,12 +22,12 @@ The Pump is under active development, and beta testing at the University of Flor
 See [Issues](https://github.com/mconlon17/vivo-pump/issues) for work in progress, features to be added, and bugs to be 
 addressed.
 
-
 ## Testing the Pump
 
-* [Test Case Overview](https://github.com/mconlon17/vivo-pump/wiki/test-case-overview)
-* [Simple VIVO Tests](https://github.com/mconlon17/vivo-pump/wiki/simple-vivo-test-cases)
+* [Pump Test Cases](Pump-Test-Cases.md)
+* [Simple VIVO Tests](Simple-VIVO-Test-Cases.md)
 
-## The Pump API
+## Pump References
 
-[The Pump API](https://github.com/mconlon17/vivo-pump/wiki/the-pump-api)
+* [The Pump API](The-Pump-API.md)
+* [The Pump Definition File](The-Pump-Definition-File.md)

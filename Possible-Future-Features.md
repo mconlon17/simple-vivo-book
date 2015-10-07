@@ -6,7 +6,12 @@ Some of the issues are for the "end user," which for Simple VIVO is typically th
 
 Features are numbered simply to make referring to them easier.  The numbering does not imply an ordering.
 
-*Note:  Some people may ask "why have future features in the wiki rather than in the issues?  After all, you can mark issues as "future" and exclude them from various lists.  And the answer is that I found that mixing the issues together was inconvenient and misleading.  GitHub does not have the ability to save queries of the issues, so each time I wanted to see the current issues, I had to explicitly exclude the issues marked "later".  Eventually I decided to gather the "later" features here and close them out of the issues list, reserving the issues list for features under active development.*
+*Note:  Some people may ask "why have future features here rather than in the issues?  After all, you can mark 
+issues as "future" and exclude them from various lists.  And the answer is that I found that mixing the issues 
+together was inconvenient and misleading.  GitHub does not have the ability to save queries of the issues, 
+so each time I wanted to see the current issues, I had to explicitly exclude the issues marked "later".  
+Eventually I decided to gather the "later" features here and close them out of the issues list, reserving the 
+issues list for features under active development.*
 
 # Possible Future Features
 

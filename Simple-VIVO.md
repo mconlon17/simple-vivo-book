@@ -138,22 +138,22 @@ These steps are very common -- we get data from VIVO, improve it, and put the im
 
 Follow one of the provided scenarios to manage data in your VIVO. The most common scenarios for managing data regarding the scholarship of your institution are provided.
 
-* [Dates](https://github.com/mconlon17/vivo-pump/wiki/dates)
-* [Organizations](https://github.com/mconlon17/vivo-pump/wiki/organizations)
-* [Concepts](https://github.com/mconlon17/vivo-pump/wiki/concepts)
-* [People](https://github.com/mconlon17/vivo-pump/wiki/people)
-* [Positions](https://github.com/mconlon17/vivo-pump/wiki/positions)
-* [Educational Background](https://github.com/mconlon17/vivo-pump/wiki/educational-background)
-* [Awards and Honors](https://github.com/mconlon17/vivo-pump/wiki/awards-and-honors)
-* [Publications](https://github.com/mconlon17/vivo-pump/wiki/publications)
-* [Journals](https://github.com/mconlon17/vivo-pump/wiki/journals)
-* [Publishers](https://github.com/mconlon17/vivo-pump/wiki/publishers)
-* [Authors](https://github.com/mconlon17/vivo-pump/wiki/authors)
-* [Grants](https://github.com/mconlon17/vivo-pump/wiki/grants)
-* [Sponsors](https://github.com/mconlon17/vivo-pump/wiki/sponsors)
-* [Teaching](https://github.com/mconlon17/vivo-pump/wiki/teaching)
-* [Mentoring](https://github.com/mconlon17/vivo-pump/wiki/mentoring)
-* [Service](https://github.com/mconlon17/vivo-pump/wiki/service)
+* [Dates](Dates.md)
+* [Organizations](Organizations.md)
+* [Concepts](Concepts.md)
+* [People](People.md)
+* [Positions](Positions.md)
+* [Educational Background](Educational-Background.md)
+* [Awards and Honors](Awards-and-Honors.md)
+* [Publications](Publications.md)
+* [Journals](Journals.md)
+* [Publishers](Publishers.md)
+* [Authors](Authors.md)
+* [Grants](Grants.md)
+* [Sponsors](Sponsors.md)
+* [Teaching](Teaching.md)
+* [Mentoring](Mentoring.md)
+* [Service](Service.md)
 
 ## Adding Scenarios
 
