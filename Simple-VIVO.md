@@ -157,7 +157,7 @@ Follow one of the provided scenarios to manage data in your VIVO. The most commo
 
 ## Adding Scenarios
 
-Adding new scenarios requires a knowledge of the VIVO ontologies, as well as knowledge of the [[Pump Definition File|the-pump-definition-file]].  
+Adding new scenarios requires a knowledge of the VIVO ontologies, as well as knowledge of the [Pump Definition File](The-Pump-Definition-File.md).  
 Studying the provided scenarios and the descriptions provided in this wiki 
 will get you started.  You will find support on-line on the VIVO email lists 
 and in the [VIVO Wiki](http://wiki.duraspace.org/display/VIVO).
