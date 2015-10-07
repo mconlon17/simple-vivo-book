@@ -1,19 +1,17 @@
-# Adding Dates to VIVO
-
-Dates in VIVO are just like other things in VIVO -- they have URI and they have attributes.  Unlike other things, however, VIVO creates the same dat many time, giving each its own URI.
+Dates in VIVO are just like other things in VIVO -- they have URI and they have attributes.  Unlike other things, however, VIVO creates the same date many times, giving each its own URI.  Eventually your VIVO will have the same date represented many, many times.
 
 Using Simple VIVO, we can create a set of dates for VIVO that are available for reuse in managing all other entities.
 
-For example, when entering a publication in VIVO, one is asked to enter the date of the publication.  Rather than create a new date for each publication, we can create a set of dates that are reused for *all* publications.  This have several advantages over creating dates for each publication:
+For example, when entering a publication in VIVO, one is asked to enter the date of the publication.  Rather than create a new date for each publication, we can create a set of dates that are reused for *all* publications.  This has several advantages over creating dates for each publication:
 
-1.  It avoids semantic confusion.  Having two dates that represent the same thing (the same date) but have different URI is not a best practice.  We could assign "sameAs" predicates to equate all all the various entities representing the same date, but this just layers complexity on an unfortunate situation.
-1.  It is simpler.  There is only one "December 18, 1993."  All things that need to refer to this date need to refer to the same entity in VIVO.
-1.  It saves space.  As VIVO grows and adds publications, it adds dates.  But this is unnecessary.  There is a "slow growing" number of dates (one per day!)
+1.  It avoids semantic confusion.  Having two dates that represent the same thing (the same date) but have different URI is not a best practice.  We could assign "sameAs" predicates to equate all the various entities representing the same date, but this just layers complexity on an unfortunate situation.
+1.  It is simpler.  There will be only one "December 18, 1993."  All things that need to refer to this date will refer to the one entity in VIVO representing "December 18, 1993."
+1.  It saves space.  As VIVO grows and adds publications, it adds dates.  But this is unnecessary.  All the dates VIVO needs can be created and loaded into VIVO once and then reused by all other data management practices.
 1.  It supports look-up by date.  Rather than find all the entities with the same date value and then finding all the things associated with each of those values, we can find all things associated with the single entity that represents the date of interest.
 
 # Date Precision
 
-VIVO Supports the concept of "date precision."  This is a little unusual in the big world of data management, so let's take a look at what VIVO can represent.  VIVO provides three precisions for date values.  A date can be just a year, or just a year and a month (common in publication dating) or a year and a month and a day (common in most administrative function).  In some cases, systems other than VIVO are "required" by their internal formats to provide a day, month and year for all dates.  Many systems default the unknown components of the date to "1".  This means that when looking at a date (without a precision) of "1993-01-01" we are unable to discern whether the date value is informative about the month and day, or whether these are just place holders.  VIVO is capable of representing, with certainty, the level of precision in the date value.  The date value "1993-01-01" with a date precision of "<http://vivoweb.org/ontology/core#yearPrecision>" is the same as a date value of "1993" with the same year precision.  The month and day values are non-informative.
+VIVO supports the concept of "date precision."  This is a little unusual in the world of data management, so let's take a look at what VIVO can represent.  VIVO provides three precisions for date values.  A date can be just a year, or just a year and a month (common in publication dating) or a year and a month and a day (common in most administrative function).  In some cases, systems other than VIVO are "required" by their internal formats to provide a day, month and year for all dates.  Many systems default the unknown components of the date to "1".  This means that when looking at a date (without a precision) of "1993-01-01" we are unable to discern whether the date value is informative about the month and day, or whether these are just place holders.  VIVO is capable of representing, with certainty, the level of precision in the date value.  The date value "1993-01-01" with a date precision of "<http://vivoweb.org/ontology/core#yearPrecision>" is the same as a date value of "1993" with the same year precision.  The month and day values are non-informative.
 
 | VIVO date precision | Example| Since Jan 1, 1800  until Dec 31, 2050|
 ----------------------|--------|-------------------|
