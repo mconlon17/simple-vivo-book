@@ -1,3 +1,5 @@
+# Adding dates to VIVO
+
 Dates in VIVO are just like other things in VIVO -- they have URI and they have attributes.  Unlike other things, however, VIVO creates the same date many times, giving each its own URI.  Eventually your VIVO will have the same date represented many, many times.
 
 Using Simple VIVO, we can create a set of dates for VIVO that are available for reuse in managing all other entities.
