@@ -3,8 +3,9 @@ An Application Program Interface (API) is a collection of programming routines a
  requesting data or actions from a piece of software, and receiving results from software.
 
 # JSON
-JavaScript Object Notation (JSON) is a data format that is easy for machines and people to read and write.  
-See [JSON.org](http://json.org) and the [JSON Wikipedia Page](https://en.wikipedia.org/wiki/JSON)
+JavaScript Object Notation (JSON) is a data format that is easy for machines and people to read and 
+write.  See [JSON.org](http://json.org) and the 
+[JSON Wikipedia Page](https://en.wikipedia.org/wiki/JSON)
 
 # Python
 Python is a popular programming language for scientific, graphical and text pro
