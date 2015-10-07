@@ -29,4 +29,4 @@
     * [Pump Test Cases](Pump-Test-Cases.md)
 * [Possible Future Features](Possible-Future-Features.md)
 * [Additional Resources](Additional-Resources.md)
-* [Glossary][GLOSSARY.md]
+* [Glossary](GLOSSARY.md)
