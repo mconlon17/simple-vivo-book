@@ -39,5 +39,5 @@ The semantic web is an effort to provide open data in standard formats for reuse
 
 # VIVO
 VIVO is an open source, semantic web software system for creating and maintaining an integrated 
-view of the scholarly work of an organization.
+view of the scholarly work of an organization.  See [the VIVO Home Page](http://vivoweb.org)
 
