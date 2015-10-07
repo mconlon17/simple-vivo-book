@@ -4,8 +4,8 @@ One of the great advantages of VIVO is its ability to use controlled vocabularie
 Your grants, papers, fields of study, personal research areas and others can all be coded using vocabularies that are
 appropriate for the job.
 
-Managing concepts in Simple VIVO is straightforward.  You edit concepts in concepts.txt as a spreadsheet.  You use
-update to update VIVO.  You use get to retrieve concepts from your VIVO.
+Managing concepts in Simple VIVO is straightforward.  You edit concepts in `concepts.txt` as a spreadsheet.  You use
+`update` to update VIVO.  You use `get` to retrieve concepts from your VIVO.
 
 ## Get started
 
@@ -32,9 +32,9 @@ Use
 
     python sv.py -a update
 
-Each time you wish to update your concepts -- add new concepts, add narrower or broader concepts to existing concepts, change the labels of concepts -- you can repeat the steps above: 
+Each time you wish to update your concepts -- add new concepts, add narrower or broader concepts to existing concepts, change the labels of concepts -- you can repeat the steps below: 
 
-1. update the enumerations using `make_enum`
-1. get the concepts from your VIVO into a spreadsheet using `sv.py -a get`
-1. edit the concepts using a spreadsheet program
-1. update VIVO using `sv.py -a update`
+1. Update the enumerations using `make_enum`
+1. Get the concepts from your VIVO into a spreadsheet using `sv.py -a get`
+1. Edit the concepts using a spreadsheet program
+1. Update VIVO using `sv.py -a update`
