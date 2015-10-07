@@ -1,4 +1,4 @@
-## Could VIVO ever be "simple"?
+# Could VIVO ever be "simple"?
 
 VIVO provides an integrated view of the scholarly work of your organization.  The scholarly work of your organization is complex -- faculty, research staff, their activities and accomplishments.  And these are connected to each other and to institutions, journals, dates, and concepts.  
 

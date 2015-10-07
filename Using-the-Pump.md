@@ -1,3 +1,5 @@
+# Using the Pump
+
 The Pump can be used from the command line, using a delivered main program called Simple VIVO (`sv`)
 
 ```bash

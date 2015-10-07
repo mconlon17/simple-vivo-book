@@ -1,3 +1,5 @@
+# Managing Organizations
+
 You will want to have organizations in your VIVO for a number of reasons:
 
 1. Organizations are the units of your institution -- your colleges, academic departments, administrative

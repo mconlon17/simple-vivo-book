@@ -1,3 +1,5 @@
+# People
+
 Each person in VIVO has contact information and other identifying information as expected.
 
 This Simple VIVO example supports 19 attributes for each person.  Each one is optional.

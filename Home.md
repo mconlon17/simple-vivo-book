@@ -1,4 +1,4 @@
-# Intro to the Pump
+# Introduction to the Pump
 
 The VIVO Pump (under development), provides a means for managing VIVO data using spreadsheets.  Rows and columns in 
 spreadsheets represent data in VIVO.  The Pump update method takes spreadsheet data, and a definition file, and 

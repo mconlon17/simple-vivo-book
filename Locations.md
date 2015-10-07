@@ -1,3 +1,5 @@
+# Locations 
+
 VIVO can store information about locations such as cities, buildings, and campuses.  One Simple VIVO definition can
 be used to manage all your locations, or you may choose to use source files specific to different kinds of locations -- 
 one for cities, one for buildings, one for campuses.
