@@ -23,7 +23,7 @@ write.  See [JSON.org](http://json.org) and the
 
 # Orcid
 The Open Researcher and Contributor Identifier.  A sixteen digit number assigned to a researcher for the purpose
-of uniquely identifying that researcher in the scholarly publishing ecosystem.  See (orcid.org)[http://orcid.org]
+of uniquely identifying that researcher in the scholarly publishing ecosystem.  See [orcid.org](http://orcid.org)
 
 # Python
 Python is a popular programming language for scientific, graphical and text pro
