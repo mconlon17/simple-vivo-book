@@ -1,3 +1,5 @@
+*Please Note:  This is a __pre-release__ of the documentation for Simple VIVO and the Pump.  The documentation is being written as the software is developed.  Some elements of the software are incomplete, or have not been thoroughly tested.  Some elements of the documentation are not complete, have not been reviewed and have not been copy-edited.  The book is changing by the day, so please stop back to see how it has been improved.  M. Conlon*
+
 # Simple VIVO
 
 Simple VIVO is a command line tool for managing data in VIVO using spreadsheets.  
