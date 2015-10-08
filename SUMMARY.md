@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [Preface](Preface.md)
 * [Simple VIVO](Simple-VIVO.md)
     * [Dates](Dates.md)
     * [Journals](Journals.md)
