@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Preface](Preface.md)
-* [How to Read This Book](How-to-Read-This-Book.md)
+* [How to Read This Book](How-To-Read-This-Book.md)
 * [Simple VIVO](Simple-VIVO.md)
     * [Dates](Dates.md)
     * [Journals](Journals.md)
