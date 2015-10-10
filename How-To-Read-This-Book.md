@@ -10,3 +10,9 @@ Read [Simple VIVO](Simple-VIVO.md) and the chapters pertaining to the materials 
 
 Read the [Preface](Preface.md) and skip to [The Pump](Home.md) and all that follows.
 
+## System Administrators
+
+For your data managers and programmers to use Simple VIVO, you will need to enable the VIVO SPARQL API.  See the VIVO documentation.  You will need to provide the API URI, and a username and password for an account authorized to read and write VIVO data through the API.
+
+You may also need to help your data manager with a command line environment suitable for running Python programs such as Simple VIVO. 
+
