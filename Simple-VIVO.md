@@ -16,10 +16,12 @@ What if we could manage the data in VIVO using spreadsheets?
 
 That's the basic idea behind "Simple VIVO" a tool for using the VIVO Pump to take spreadsheet data and put into VIVO (called an update) and to get data from VIVO and put it in a spreadsheet (called a get).
 
-The ![cycle](cycle.png) of data management is shown below.  Using Simple VIVO, we can "get" domain data from VIVO into a 
+The cycle of data management is shown below.  Using Simple VIVO, we can "get" domain data from VIVO into a
 spreadsheet.  The spreadsheet data will reflect one of the domains -- people, mentoring, teaching, etc.  We edit the data in the spreadsheet, 
 adding missing values, updating values, and adding rows to represent new things.  We then use Simple VIVO to update the data in VIVO using the
 data in the spreadsheet as authoritative.
+
+![cycle](cycle.png)
 
 Spreadsheets have rows and columns.  The rows in the spreadsheet will correspond to "things" in VIVO.  Depending on the scenario, your spreadsheet might contain people, publications, grants, courses or other kinds of things.
 
