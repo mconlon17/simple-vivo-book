@@ -2,8 +2,7 @@
 
 # Simple VIVO
 
-Simple VIVO is a command line tool for managing data in VIVO using spreadsheets.  
-With Simple VIVO you can get the data from your VIVO into spreadsheets on topics such as grants, people, 
+Simple VIVO is a command line tool for managing data in VIVO using spreadsheets.  With Simple VIVO you can get the data from your VIVO into spreadsheets on topics such as grants, people, 
 publications, educational training, and more.  You can then edit those spreadsheets and update VIVO with your edits.
 
 Simple VIVO is open source and uses a software tool called the Pump to get data from and update data in VIVO. 

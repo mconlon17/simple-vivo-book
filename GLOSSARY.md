@@ -34,7 +34,8 @@ The Open Researcher and Contributor Identifier.  A sixteen digit number assigned
 of uniquely identifying that researcher in the scholarly publishing ecosystem.  See [orcid.org](http://orcid.org)
 
 # Python
-Python is a popular programming language for scientific, graphical and text pro
+Python is a popular programming language for scientific, graphical and text programming.  See
+[python.org](http://python.org)
 
 # Pump
 The VIVO Pump is python software for adding, removing and updating data in VIVO using spreadsheets.
@@ -58,6 +59,10 @@ A triple store is a database designed to manage triples.
 # VIVO
 VIVO is an open source, semantic web software system for creating and maintaining an integrated 
 view of the scholarly work of an organization.  See [the VIVO Home Page](http://vivoweb.org)
+
+# VIVO Vagrant
+Vagrant is software for providing a self-contained computing environment on your machine.  VIVO Vagrant is a full
+featured VIVO that runs in a Vagrant environment.
 
 # VIVO-ISF
 The VIVO Integrated Semantic Framework, the ontology used by VIVO to represent scholarship.
