@@ -17,8 +17,8 @@ What if we could manage the data in VIVO using spreadsheets?
 That's the basic idea behind "Simple VIVO" a tool for using the VIVO Pump to take spreadsheet data and put into VIVO (called an update) and to get data from VIVO and put it in a spreadsheet (called a get).
 
 The cycle of data management is shown below.  Using Simple VIVO, we can "get" domain data from VIVO into a
-spreadsheet.  The spreadsheet data will reflect one of the domains -- people, mentoring, teaching, etc.  We edit the data in the spreadsheet, 
-adding missing values, updating values, and adding rows to represent new things.  We then use Simple VIVO to update the data in VIVO using the
+spreadsheet.  The spreadsheet data will reflect one of the domains -- people, mentoring, teaching, etc.  Once the data is in a spreadsheet, it is very easy to edit.  You can scan the columns looking for missing or incorrect data.  You can edit the data in the spreadsheet, 
+adding missing values, updating values, and adding rows to represent new things.  You can then use Simple VIVO to update the data in VIVO using the
 data in the spreadsheet as authoritative.
 
 ![cycle](cycle.png)
@@ -148,23 +148,20 @@ Follow one of the provided scenarios to manage data in your VIVO. The most commo
 * [Dates](Dates.md)
 * [Organizations](Organizations.md)
 * [Concepts](Concepts.md)
+* [Journals](Journals.md)
+* [Locations](Locations.md)
 * [People](People.md)
 * [Positions](Positions.md)
 * [Educational Background](Educational-Background.md)
 * [Awards and Honors](Awards-and-Honors.md)
 * [Publications](Publications.md)
-* [Journals](Journals.md)
-* [Publishers](Publishers.md)
-* [Authors](Authors.md)
 * [Grants](Grants.md)
-* [Sponsors](Sponsors.md)
-* [Teaching](Teaching.md)
+* [Teaching](Courses.md)
 * [Mentoring](Mentoring.md)
 * [Service](Service.md)
 
 ## Adding Scenarios
 
-Adding new scenarios requires a knowledge of the VIVO ontologies, as well as knowledge of the [Pump Definition File](The-Pump-Definition-File.md).  
-Studying the provided scenarios and the descriptions provided in this wiki 
+Adding new scenarios requires a knowledge of the VIVO ontologies, as well as knowledge of the [Pump Definition File](The-Pump-Definition-File.md).  Studying the provided scenarios and the descriptions provided in this wiki 
 will get you started.  You will find support on-line on the VIVO email lists 
 and in the [VIVO Wiki](http://wiki.duraspace.org/display/VIVO).
