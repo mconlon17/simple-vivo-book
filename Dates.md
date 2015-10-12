@@ -15,11 +15,11 @@ For example, when entering a publication in VIVO, one is asked to enter the date
 
 VIVO supports the concept of "date precision."  This is a little unusual in the world of data management, so let's take a look at what VIVO can represent.  VIVO provides three precisions for date values.  A date can be just a year, or just a year and a month (common in publication dating) or a year and a month and a day (common in most administrative function).  In some cases, systems other than VIVO are "required" by their internal formats to provide a day, month and year for all dates.  Many systems default the unknown components of the date to "1".  This means that when looking at a date (without a precision) of "1993-01-01" we are unable to discern whether the date value is informative about the month and day, or whether these are just place holders.  VIVO is capable of representing, with certainty, the level of precision in the date value.  The date value "1993-01-01" with a date precision of "<http://vivoweb.org/ontology/core#yearPrecision>" is the same as a date value of "1993" with the same year precision.  The month and day values are non-informative.
 
-| VIVO date precision | Example| Since Jan 1, 1800  until Dec 31, 2050|
+VIVO date precision | Example| Since Jan 1, 1800  until Dec 31, 2050
 ----------------------|--------|-------------------|
-| <http://vivoweb.org/ontology/core#yearMonthDayPrecision> | "1993-12-18" |91,676 |
-| <http://vivoweb.org/ontology/core#yearMonthPrecision>    | "1993-12"    | 3,012 |
-| <http://vivoweb.org/ontology/core#yearPrecision>         | "1993"       | 251 |
+<http://vivoweb.org/ontology/core#yearMonthDayPrecision> | "1993-12-18" |91,676
+<http://vivoweb.org/ontology/core#yearMonthPrecision>    | "1993-12"    | 3,012
+<http://vivoweb.org/ontology/core#yearPrecision>         | "1993"       | 251
 
 # Pre-loading VIVO with dates
 
