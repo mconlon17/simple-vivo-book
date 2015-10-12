@@ -10,7 +10,7 @@ Other choices could be made.  simple VIVO is extensible.  It can be used to mana
 
 ## Authoritative Sources of Data
 
-For every value in VIVO we should be trying to answer the question "who is the best source of this data?"  For different examples, the answers are likely to be different.  See the table below for possible answers.  The answers for your organization may be different.
+For every value in VIVO we should be trying to answer the question "where is the best source of this data?"  For different examples, the answers are likely to be different.  See the table below for possible answers.  The answers for your organization may be different.
 
 Example | Best source
 ------|------
@@ -66,7 +66,7 @@ As always, the values you specify in the spreadsheet will replace the values in 
 
 # Summary
 
-You will need to identify sources for each of the domains you choose to manage in Simple VIVO' as well as procedures for acquiring the data, getting the data. Into the format required by Simple VIVO, and handling cases where the authoritative data may be incorrect.
+You will need to identify sources for each of the domains you choose to manage in Simple VIVO as well as procedures for acquiring the data, getting the data. Into the format required by Simple VIVO, and handling cases where the authoritative data may be incorrect.
 
 Simple VIVO spreadsheet cells can contain any of the following
 
