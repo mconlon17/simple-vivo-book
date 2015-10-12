@@ -10,7 +10,7 @@ help you prepare your machine, and show you how. To. Use the command line.
 1. You will need to have Simple VIVO installed on your machine.  This is very simple to do.  Once Python is 
 installed, you can type: pip install simple-VIVO 
 1. You will need to edit the Simple VIVO configuration file sv.cfg to provide four pieces of information:
-    1. The URL Of your VIVO SPARQL API.  Your system administrator will have this value.
+    1. The URL of your VIVO SPARQL API.  Your system administrator will have this value.
     1. The username required to access your VIVO SPARQL
     1. The password required to access your VIVO SPARQL API
     1. The URI pattern you would like Simple VIVO to use when created new URI (see below)
