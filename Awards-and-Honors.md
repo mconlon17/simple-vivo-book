@@ -56,11 +56,8 @@ John Smith earns a lifetime achievement award from the American Cancer Society i
 
     `John Smith  ACS Lifetime Achievement Award  American Cancer Society 2015`
     
-1. Run
-
-    `python ../../sv.py -a update``
-    
-and the award will be in place.
+1. Run `python ../../sv.py -a update`
+    and the award will be in place.
 
 
 
