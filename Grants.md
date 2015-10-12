@@ -40,7 +40,7 @@ As always, your spreadsheet values will be non-blank if you would like to specif
 
 1. Use `make_enum.py` to prepare the enumerations for grants
 
-    `python make_enum.py``
+    `python make_enum.py`
 
 1. Use get to retrieve the grants from your VIVO to a spreadsheet
 
