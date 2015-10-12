@@ -31,21 +31,9 @@ represent in VIVO, edit the field_enum.txt file with a text editor and add a row
 ## get and update as always
 
 1. Edit your `sv.cfg` file to provide the query parameters for your VIVO.  Your system administrator can help you with this.
-1. Run get:
-
-    `python sv.py -a get`
-
+1. Run get:  `python sv.py -a get`
 The result will be a degrees.txt file which you can open in a spreadsheet to edit the degrees for your people. Every value you enter in each of the columns should be a value in one of the enumerations.  Each column has its own enumeration.
+1. Edit your enumerations as needed to provide additional values for degrees and fields of study.  To add universities or other schools to your VIVO and make them available for your education work, use the orgs example to add the organizations, then run make_enum to update your enumerations.  The new schools are now available for putting educational background in VIVO. Once you have a spreadsheet with degrees that you would like to use to update VIVO:
 
-Edit your enumerations as needed to provide additional values for degrees and fields of study. 
-
-To add universities or other schools to your VIVO and make them available for your education work, use the orgs example to add the organizations, then run make_enum to update your enumerations.  The new schools are now available for putting educational background in VIVO. 
-
-Once you have a spreadsheet with degrees that you would like to use to update VIVO:
-
-1. Run update
-    
-    `python sv.py -a update`
-
-The information in your `degrees.txt` file will be used to update degree information in VIVO.
+1. Run update  `python sv.py -a update`  The information in your `degrees.txt` file will be used to update degree information in VIVO.
 
