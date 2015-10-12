@@ -86,7 +86,3 @@ To maintain subsets, follow the steps below:
 1. Copy the sv.cfg file into each folder
 1. Modify the sv.cfg file to use the name of the definition file for your subset.  Modify the rdfprefix and source file name as appropriate to help you manage the subset.
 1. Run your gets and updates as above in each folder for each subset.
-
-# Future
-
-We expect to be able to manage photos of organizations in the future.  Check back here to see if Simple VIVO supports photos.
