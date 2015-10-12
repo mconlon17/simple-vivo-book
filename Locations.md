@@ -38,7 +38,6 @@ A second example provides a data set of United States cities with populations of
 loaded into your VIVO and used to provide references for events and other VIVO entities that reference
 locations.
 
-
 ## Manage Campus Buildings using Simple VIVO
 
 Buildings are locations.  Each has a name, a URL (may point to an enterprise system, an existing university web page 
@@ -52,10 +51,10 @@ A sample file of buildings at the University of Florida is provided in uf_buildi
 ### How to use
 
 1. Use the sv_buildings.cfg config file to get your buildings from VIVO, as in:
-    python sv.py -c sv_buildings.cfg -a get
+    `python sv.py -c sv_buildings.cfg -a get`
 1. Edit the resulting buildings.txt file to add your buildings
 1. Update VIVO using
-    python sv.py -c sv_buildings.cfg -a update
+    `python sv.py -c sv_buildings.cfg -a update`
 1. Add the resulting RDF to VIVO
 
 
@@ -84,9 +83,7 @@ the  [RDF file](http://www.w3.org/2003/01/geo/wgs84_pos#)
 ### How to use
 
 1. Add District of Columbia to your VIVO as a State or Province.  Add to state_enum.txt
-1. Add Puerto Rico to your VIVO as a State of Province.  Add to state_enum.txt
-1. Add the cities to your VIVO using an sv update as shown below:
-    python sv.py -c sv_cities.cfg -s us_cities.txt -a update
+1. Add Puerto Rico to your VIVO as a State or Province.  Add to state_enum.txt
+1. Add the cities to your VIVO using an sv update as shown `python sv.py -c sv_cities.cfg -s us_cities.txt -a update`
 1. Add the resulting RDF to VIVO
-1. To see your city data and manage it in the future, you can do an sv get
-    python sv.py -c sv_cities.cfg -a get
+1. To see your city data and manage it in the future, you can do an sv get: ``python sv.py -c sv_cities.cfg -a get`
