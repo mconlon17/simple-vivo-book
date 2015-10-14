@@ -35,13 +35,13 @@ Once you have awards to add to VIVO, run:
     
 which will create the `award_add.rdf` and `award_sub.rdf` to update your VIVO.
 
-## Adding People, Dates, Awards and Organizations to your VIVO
+## Adding People, Awards, Dates, and Organizations to your VIVO
 
-To manage awards, your enumerations must be up to date.  Each award, person, organization, and date must already be in  your VIVO and in your enumerations.  Updating your enumerations is simple -- run `make_enum.py` as shown above.
+To manage awards, your enumerations must be up to date.  Each person, organization, award, and date that will be referenced in an award must already be in  your VIVO and in your enumerations.  Updating your enumerations is simple -- run `make_enum.py` as shown above.
 
 If you need to add dates, rerun the dates example with a wider date range.
 
-To add a single person, name of an award or an organization conferring an award, use the VIVO web interface.  Update
+To add a single person, name of an award, or an organization conferring an award, use the VIVO web interface.  Update
 the enumerations, add a row to your awards.txt for the new award and run a Simple VIVO update.  
 
 For example:
