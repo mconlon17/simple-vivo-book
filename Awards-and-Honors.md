@@ -4,7 +4,7 @@ To add awards and honors to VIVO, we need to know several pieces of information 
 
 1. Who got the award or honor?
 1. What award or honor was received?
-1. From what institution?
+1. From what organization?
 1. What is the date of the award?
 
 ## Managing Enumerations
@@ -52,7 +52,7 @@ John Smith earns a lifetime achievement award from the American Cancer Society i
 
 1. Use the Site Admin interface to add "ACS Lifetime Achievement Award" as an award.
 
-1. Update the enumerations.  Now all four elements of the award receipt are in your VIVO and you can add a row to your awards.txt spreadsheet that looks like
+1. Update the enumerations.  Now all four elements of the award receipt (person, date, award and organization) are in your VIVO and in your enumerations. You can add a row to your `awards.txt` spreadsheet that looks like
 
     `John Smith  ACS Lifetime Achievement Award  American Cancer Society 2015`
     
