@@ -86,3 +86,54 @@ To maintain subsets, follow the steps below:
 1. Copy the sv.cfg file into each folder
 1. Modify the sv.cfg file to use the name of the definition file for your subset.  Modify the rdfprefix and source file name as appropriate to help you manage the subset.
 1. Run your gets and updates as above in each folder for each subset.
+
+
+## Frequently Asked Questions
+
+*Do I need to have all the possible columns in my spreadsheet?*
+
+No.  The only columns you need are the name column and the columns you want to update.
+
+*Do I need to have all the organizations in my spreadsheet?*
+
+No.  The only rows you need are for the organizations you want to update.
+
+*So if I wanted to update email addresses for the departments in my college all I would need is the names of the departments and their email addresses?*
+
+Yes.
+
+*But sometimes two organizations might have the same name -- the chemistry department at my school and the chemistry department at Berkeley, for example. How do I handle that?*
+
+There are two approaches.  
+
+The first is simple -- include the name of the school in the name of the org for any org outside your institution.  So, for example, at your school, you would name the chemistry department "Chemistry" and the chemistry department at Berkeley would be called "Chemistry (UC Berkeley)"
+
+The second approach is more complex, but will allow you to avoid having to put the name of the school in the name of the organization.  When using Simple VIVO, the spreadsheet provided by Simple VIVO contains an additional column that you did not enter.  That column is called "uri."  VIVO supplies a uri for each thing in VIVO.  Every org has a uri.  You can use uri instead of name to identify your organizations.  If you use a spreadsheet with uri as a column, Simple VIVO will use the uri (instead of name!) to find and update organizations.  Two organizations can have the same name since they have different uri.
+
+1. What if I use a column name that Simple VIVO does not know about?
+
+Nothing will be done.  The log will contain messages indicating which columns were unknown.  Always check the log after every run to see what Simple VIVO has done.
+
+A complete list of all the column names known to Simple VIVO is available in the manual.
+
+1. What if I give an new organization name -- one that VIVO hasn't seen before?
+
+Simple VIVO will add the organization to VIVO and give it all the data you have on the the row in your spreadsheet.  It will assign a new URI.  The next time you do a `get`, Simple VIVO will show all your organizations, including the ones you added.
+
+1. How do I remove an org?
+
+Create a spreadsheet with two columns.  In the uri column, give the URI of the organization to be removed.  Create a second column with the column heading "action".  On the row under action, put "remove".
+
+1. How do I remove values for some organizations and not others?
+
+Use "None" to remove a value from an organization.  
+
+1. What happens if I leave the value in a column for an organization blank?
+
+Nothing happens.  This is different from specifying a value, or specifying "None" to remove a value.  So three things can appear in a column and Simple VIVO takes three different actions:
+
+* If a value appears in the column, the value in VIVO is replaced with the value you specify.
+* If the value "None" appears in the column, Simple VIVO removes the value in VIVO.  The org in VIVO will have no value for the column containing "None".
+* If the value is blank, Simple VIVO does nothing.  The value in VIVO, if there is one, remains unchanged.
+
+
