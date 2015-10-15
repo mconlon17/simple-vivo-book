@@ -10,7 +10,7 @@ Simple VIVO provides a set of more than 6,600 academic journals, each with an IS
 
 To add these journals to your VIVO, use:
 
-    python -v -a update -s journal_data.txt
+    python sv.py -a update -s journal_data.txt
     
 The result will be a two files:  `journal_add.rdf` and `journal_sub.rdf`  Use the VIVO System Admin interface to add 
 the RDF in `journal_add.rdf` to your VIVO.  `journal_sb.rdf` should be empty.  If not, use the VIVO System Admin 
