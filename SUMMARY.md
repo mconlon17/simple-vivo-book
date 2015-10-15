@@ -14,7 +14,7 @@
     * [People](People.md)
     * [Positions](Positions.md)
     * [Educational Background](Educational-Background.md)
-    * [Awards and Honors](Awards-and-Honors.md)
+    * [Awards & Honors](Awards-and-Honors.md)
     * [Publications](Publications.md)
     * [Authors](Authors.md)
     * [Grants](Grants.md)
