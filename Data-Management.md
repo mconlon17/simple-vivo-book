@@ -1,4 +1,4 @@
-# Data  Management
+# Data Management
 
 Data management a collection of processes and permissions and talents applied. To the task of creating quality data.  Quality data is data is data that is correct and of value to consumers of the data.  
 
