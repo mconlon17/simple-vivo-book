@@ -7,5 +7,5 @@ The table below lists the reserved column names in Simple VIVO.
 Name | Use
 -----|-----
 uri | A column with the name `uri` is returned by every `get`.  The column contains the Uniform Resource Identifiers of the things you working with in VIVO.  Everything in VIVO has a URI.
-action | If a column with the name `action` is included in a spreadsheet used in `update`, 
+action | If a column with the name `action` is included in a spreadsheet used in `update`, Simple VIVO will look in the action column for additional instructions regarding the processing of the row.
 
