@@ -110,25 +110,29 @@ The first is simple -- include the name of the school in the name of the org for
 
 The second approach is more complex, but will allow you to avoid having to put the name of the school in the name of the organization.  When using Simple VIVO, the spreadsheet provided by Simple VIVO contains an additional column that you did not enter.  That column is called "uri."  VIVO supplies a uri for each thing in VIVO.  Every org has a uri.  You can use uri instead of name to identify your organizations.  If you use a spreadsheet with uri as a column, Simple VIVO will use the uri (instead of name!) to find and update organizations.  Two organizations can have the same name since they have different uri.
 
-1. What if I use a column name that Simple VIVO does not know about?
+*What if I use a column name that Simple VIVO does not know?*
 
-Nothing will be done.  The log will contain messages indicating which columns were unknown.  Always check the log after every run to see what Simple VIVO has done.
+Nothing will be done.  The log will contain messages indicating which columns were unknown.  Always check the log after every run to see what Simple VIVO has done.  Only column names that are in your spreadsheet **and** in the definition file are processed.  All other columns are ignored.  
 
-A complete list of all the column names known to Simple VIVO is available in the manual.
+For a `get` this means that Simple VIVO will get all the columns defined in the definition file and return them as columns in a spreadsheet.
 
-1. What if I give an new organization name -- one that VIVO hasn't seen before?
+For an `update` this means that if a column appears in your spreadsheet that is not defined in the definition file, it will be ignored during the update.  You can have a "notes" column, for example, where you leave notes to yourself regarding additional research that should be done regarding a particular entity.
+
+For an `update` in which all the columns in the spreadsheet are defined, all the columns in the spreadsheet will be processed.  If there are additional column definitions in the definition file and those columns are not in your spreadsheet, these additional definitions will not be used.   This makes it easy to have a definition file that defines many columns and then only use a few columns in a particular spreadsheet.  You might have a spreadsheet that updates organizational contact information and a separate spreadsheet that updates `within` and `successor` information, for example.
+
+*What if I give a new organization name -- one that VIVO hasn't seen before?*
 
 Simple VIVO will add the organization to VIVO and give it all the data you have on the the row in your spreadsheet.  It will assign a new URI.  The next time you do a `get`, Simple VIVO will show all your organizations, including the ones you added.
 
-1. How do I remove an org?
+*How do I remove an organization?*
 
 Create a spreadsheet with two columns.  In the uri column, give the URI of the organization to be removed.  Create a second column with the column heading "action".  On the row under action, put "remove".
 
-1. How do I remove values for some organizations and not others?
+*How do I remove values for some organizations and not others?*
 
 Use "None" to remove a value from an organization.  
 
-1. What happens if I leave the value in a column for an organization blank?
+*What happens if I leave the value in a column for an organization blank?*
 
 Nothing happens.  This is different from specifying a value, or specifying "None" to remove a value.  So three things can appear in a column and Simple VIVO takes three different actions:
 
