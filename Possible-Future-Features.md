@@ -17,7 +17,7 @@ issues list for features under active development.*
 
 1. Add an ontology diagram to each example to show what is going on.
 1. Rename the "remove" column to "action" and provide remove as one of several actions.  Support a merge action
-by providing a syntax to specify a mater and merge to the master. "a1" and "a" where "a" specifies a master and "a1" indicates "merge to a".  Could ten use any string as a mater identifier and any string with a number as merge to the master identifier.  Could specify many merges in one update.
+by providing a syntax to specify a mater and merge to the master. "a1" and "a" where "a" specifies a master and "a1" indicates "merge to a".  Could then use any string as a master identifier and any string with a number as merge to the master identifier.  Could specify many merges in one update.
 1. Add SPARQL queries and visualizations to each example to reward data managers for getting their data into VIVO.
 1. Add handler for photos. When a user specifies a photo filename as data, a handler should be available as part of the definition that can process the file, create a thumbnail, put the thumbnail and photo in appropriate places in the VIVO file system and generate the appropriate RDF.
 1. Refactor two_step and three_step as recursive.  Pump should support any path length through recursive application of path. Need to be clever about "one back" and one forward" and then it should be feasible. Will take a good lucid morning.
