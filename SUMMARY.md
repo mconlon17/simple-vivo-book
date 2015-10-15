@@ -22,6 +22,8 @@
     * [Mentoring](Mentoring.md)
     * [Service](Service.md)
     * [University of Florida Examples](University-of-Florida-Examples.md)
+    * [Simple VIVO Command Line](Simple-VIVO-Command-Line.md)
+    * [Simple VIVO Reserved Column Names](Simple-VIVO-Reserved-Column-Names.md)
     * [Simple VIVO Config File](Simple-VIVO-Config-File.md)
     * [Simple VIVO Test Cases](Simple-VIVO-Test-Cases.md)
 * [The Pump](Home.md)
