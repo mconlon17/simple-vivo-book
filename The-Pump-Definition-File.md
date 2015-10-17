@@ -216,11 +216,16 @@ Example:  You wish to manage people.  You have a column in the spreadsheet calle
 
 ##### single\*
 
-Used to indicate whether the predicate is single valued (true) or multi-valued (false).
+Used to indicate whether the predicate is single valued (true), multi-valued (false), or boolean.
 
 If you specify "true" for single, the Pump will warn you if it finds multi-valued values for the predicate.  Your value will replace *all* the values in VIVO.
 
 If you specify "false" for single, the Pump will expect you to supply all the values for the predicate.  If you specify one value, *all* the values in VIVO will be replaced with the value you specify.  If you specify 3 values and VIVO has two, the Pump will compare the values you specify with the values in VIVO and add and remove values as needed to insure that the values you specify are the values with that will be in VIVO.
+
+If you specify "boolean" for single, the Pump will process the column according to the value property in the object.  
+For a `get`, if the value is found, the column will contain a '1', otherwise a '0'.  For an `update`, a '1' indicates
+that the value should be added if not present.  A '0' indicates the value should be removed if found.  'None' can be
+used as always to remove the value.  Blank, as always, indicates do nothing.
 
 Example:  VIVO has values "a" and "b" for an attribute.  You specify the attribute is "single": false. You specify values "b";"c";"d"  VIVO will remove "a", leave "b" as is, and add "c" and "d" as values for the attribute.
 
@@ -242,7 +247,8 @@ Not: You do not need to include inferred values in an include list.  The VIVO in
 
 #### object\*
 
-The "object" key name is required in each element of the path.  See above.  The "object" key name 
+The "object" key name is required in each element of the path.  See above.  The "object" key name may contain one
+or more of the parameters described below.
 
 ##### datatype
 
@@ -289,6 +295,7 @@ improve_dollar_amount       |  Strings which should contain dollar amounts (two 
 improve_sponsor_award_id    |  For NIH style sponsor award ids
 improve_deptid              |  For department identifiers (eight digits, may start with zero)
 improve_display_name        |  When displaying the whole name (not name parts) of a person
+improve_org_name            |  Organization labels
 
 Example for publication titles:
 
@@ -296,7 +303,7 @@ Example for publication titles:
         {
             "predicate": {
                 "single": true, 
-                "ref": "http://www.w3.org/2000/01/rdf-schema#label"
+                "ref": "rdf:label"
             }, 
             "object": {
                 "filter": "improve_title", 
@@ -321,10 +328,29 @@ will be given the type as specified.  The VIVO inferencer will supply all parent
 
 #### value
 
-value is used when the predicate processing is boolean. A value for the object is specified using the value parameter.  if the column contains a '0' or 'None' or 'false' or 'n' or 'no', the value is removed from VIVO if present.  If any other value is found in the column, the value is added to VIVO if not currently there.  Blank
+value is used when the predicate processing is boolean. A value for the object is specified using the value parameter.  
+If the column contains a '0' or 'None' or 'false' or 'n' or 'no', the value is removed from VIVO if present.  
+If any other value is found in the column, the value is added to VIVO if not currently there.  Blank
 column values are not processed.
 
-Example:  A new research area 'x85' is created and 50 faculty are identified that have the research area.  A spreadsheet of faculty members and an x85 column is defined as boolean with the value 'http://definitinsource/x85'.  The speadsheet contains a '1' in the x85 column for each of the faculty members with the x85 research area.  All other data for the faculty members is unchanged.  The pump will add hasResearArea assertions for each of the fifty faculty.
+Example:  A new research area 'x85' is created and 50 faculty are identified that have the research area.  A 
+spreadsheet of faculty members and an x85 column is defined as boolean with the value 'http://definitionsource/x85'.  
+The spreadsheet contains a '1' in the x85 column for each of the faculty members with the x85 research area.  
+All other data for the faculty members is unchanged.  The pump will add hasResearchArea assertions for each of the 
+fifty faculty.  The definition is shown below:
+
+    "x85": [
+        {
+            "predicate": {
+                "single": "boolean",
+                "ref": "vivo:hasResearchArea"
+            },
+            "object": {
+                "literal": false,
+                "value": "http://definitionsource/x85"
+            }
+        }
+    ],
 
 ##### lang
 
@@ -351,19 +377,23 @@ Use a qualifier to specify an additional condition which must be met to specify 
 
 ##### label
 
-Use the label to specify a label to be added to the intermediate object constructed by the Pump during an update.
+Use label to specify a label to be added to the intermediate object constructed by the Pump during an update.
 
 ## closure_defs
 
-Closure definitions are identical in all ways to column_defs.  They are processed after all column_defs regardless of where they appear in the definition file.
-
-Closures are used to define additional paths required to specify the semantic relationships between between entities.  In most cases, closures are not needed -- paths from the row entity can be defined through the column_defs from row entity to the column value, whether literal or reference.  But in some cases, there are
+Closures are used to define additional paths required to specify the semantic relationships between between entities.  
+In most cases, closures are not needed -- paths from the row entity can be defined through the column_defs from row 
+entity to the column value, whether literal or reference.  But in some cases, there are
 relationships between entities referred to from the row entity.
+
+Closure definitions are identical in all ways to column_defs.  They are processed after all column_defs regardless 
+of where they appear in the definition file.
 
 For example, in teaching, the row entity, TeacherRole, has a clear path to the teacher and to the course.  But there
 is also a relationship to be defined between the person and the course.  One might argue that this relationship is
 unnecessary and that would be correct. The relationship could be inferred.  But our semantic inference is not yet
-capable of making the inference between person and course, given the relationships between TeacherRole and person, and TeacherRole and course.  A closure is to to make the assertion between Person and Course.
+capable of making the inference between person and course, given the relationships between TeacherRole and person, 
+and TeacherRole and course.  A closure is to to make the assertion between Person and Course.
 
 Just as with any normal column_def, the closure defines a path from the row entity to the column value.  In the
 teaching example, we could define a closure from the TeachingRole to the Course through the Person, thereby
@@ -378,7 +408,8 @@ in any order. All elements of the column_def are available in closure_defs and w
 The closure_def is just a second chance to use the column data to define additional paths required to represent
 the relationships between the entities.
 
-For the teaching example, the closure defines a second path from the TeachingRole (row entity) to the course (column entity) through the instructor.  The `closure_def` is shown below:
+For the teaching example, the closure defines a second path from the TeachingRole (row entity) to the course 
+(column entity) through the instructor.  The `closure_def` is shown below:
 
     "closure_defs": {
         "course": [
@@ -408,6 +439,8 @@ For the teaching example, the closure defines a second path from the TeachingRol
 
 Notes:
 
-1.  The course is "reused" by the closure to define a second path from the TeacherRole to the course.  See the column_def for the first path.
+1.  The course is "reused" by the closure to define a second path from the TeacherRole to the course.  See the 
+column_def for the first path.
 2.  The first step in the path is through the instructor.  The object needs a name as an intermediate.
-3.  The instructor step in the path does not need a qualifier.  It is coming from the row entity and there is only one entity that has the predicate relationship to the row entity. 
+3.  The instructor step in the path does not need a qualifier.  It is coming from the row entity and there is only 
+one entity that has the predicate relationship to the row entity. 
