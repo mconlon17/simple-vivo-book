@@ -6,5 +6,5 @@ that highlight the VIVO concepts of connect, share and discover.
 community best practices, technical documentation, and project governance.
 * [VIVO GitHub](https://github.com/vivo-project)  VIVO software can be downloaded from GitHub.  Are you a developer?  
 We are always looking for people to help improve VIVO.
-* [Some VIVO Things](https://mconlon17.github.io/)  a web site with additional tools and scripts for working with
+* [Some VIVO Things](https://mconlon17.github.io/)  a web site with additional tools, scripts, and SPARQL queries for working with
 VIVO.
