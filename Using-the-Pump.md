@@ -6,11 +6,11 @@ The Pump can be used from the command line, using a delivered main program calle
 python sv.py -defn my_definition_file.json -src my_spreadsheet_file.csv -a get
 ```
 
-By default, Simple VIVO reads parameters from a configuration file.  The configuration file tells Simple VIVO the address of your VIVO and the username and password needed to perform updates.
+By default, Simple VIVO reads parameters from a configuration file.  The configuration file tells Simple VIVO the URL of your VIVO SPARQL API, and the username and password of an account that will be used to perform updates.
 
 The Pump can also be used from a Python program by importing the pump, creating a pump object and calling
 a method on it.  In the example below, a Pump object is created with a definition file and a source file.
-The `get()` method uses the definition file to build queries that are run in your VIVO and produce the 
+The `get()` method uses the definition file to build queries that are run in your VIVO and used to produce the 
 source file.
 
 ```python
