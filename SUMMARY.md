@@ -22,6 +22,7 @@
    * [Mentoring](Mentoring.md)
    * [Service](Service.md)
    * [University of Florida Examples](University-of-Florida-Examples.md)
+   * [Versions of VIVO](Versions-of-VIVO.md)
    * [Simple VIVO Command Line](Simple-VIVO-Command-Line.md)
    * [Simple VIVO Reserved Column Names](Simple-VIVO-Reserved-Column-Names.md)
    * [Merging entities](Merging-Entities.md)
