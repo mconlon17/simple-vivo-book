@@ -60,7 +60,7 @@ Some values in Simple VIVO are defined as being binary -- that is, the value rep
 
 When managing data in VIVO, we need to. Be clear whether an attribute can have one value, or more than one value.  VIVO often supports more than one value, but Simple VIVO may simplify the data management to the case of one value. For each example, we indicate the values that can be managed and whether the value is single, multiple, or binary (present or absent).
 
-When Simple VIVO accepts multiple values for a value, put all the values in a single spreadsheet cell, separated by the "infra field delimiter" st in the sv.cfg file and defaulted to a semicolon.
+When Simple VIVO accepts multiple values for a value, put all the values in a single spreadsheet cell, separated by the "infra field delimiter" as specified in the `sv.cfg` file and defaulted to a semicolon.
 
 As always, the values you specify in the spreadsheet will replace the values in VIVO.  If you use the word None in a multi-valued field, all the values in VIVO will be removed.  Leaving a multi-valued field blank indicates that no action should be taken on the field.
 
