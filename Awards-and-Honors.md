@@ -1,11 +1,20 @@
 # Awards and Honors
 
+For Awards and Honors, VIVO distinguishes between two ideas:
+
+1.  The generic award (as in the Nobel Peace Prize)
+2.  And the instance of the award as in "Theodore Roosevelt won the Nobel Peace Prize in 1906"
+
+This allows us to easily list all the people who won any particular award.
+
 To add awards and honors to VIVO, we need to know several pieces of information for each award or honor:
 
-1. Who got the award or honor?
-1. What award or honor was received?
-1. From what organization?
-1. What is the date of the award?
+1. Who got the award or honor?  e.g. Theodore Roosevelt
+1. What award or honor was received?  e.g. Nobel Peace Prize
+1. From what organization?  e.g. Norwegian Nobel Committee
+1. What is the date of the award? e.g. 1906
+
+Each of these four things "Theodore Roosevelt", "Nobel Peace Prize," "Norwegian Nobel Committee," and the date 1906 must all be in VIVO before the indication of the award to Roosevelt can be made.  Adding Awards and Honors makes the links between these four things, not the things themselves.
 
 ## Managing Enumerations
 
