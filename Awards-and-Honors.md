@@ -14,11 +14,11 @@ To add awards and honors to VIVO, we need to know several pieces of information 
 1. From what organization?  e.g. Norwegian Nobel Committee
 1. What is the date of the award? e.g. 1906
 
-Each of these four things "Theodore Roosevelt", "Nobel Peace Prize," "Norwegian Nobel Committee," and the date 1906 must all be in VIVO before the indication of the award to Roosevelt can be made.  Adding Awards and Honors makes the links between these four things, not the things themselves.
+Each of these four things "Theodore Roosevelt", "Nobel Peace Prize," "Norwegian Nobel Committee," and the date 1906 must all be in VIVO *before* the indication of the award to Roosevelt can be added by Simple VIVO.  Adding Awards and Honors makes the links between these four things, not the things themselves.
 
 ## Managing Enumerations
 
-Each is represented by an enumeration:
+Each of the four things is represented by an enumeration:
 
 1. person_enum for who
 1. award_enum for what
@@ -32,13 +32,13 @@ The python program `make_enum.py` can be used to update these enumerations using
     
 ## Managing Awards
 
-You can use 
+Once the things to be talked about are in VIVO, and the enumerations are made, you can use 
 
     python sv.py -a get
     
-to get the awards from your VIVO into a spreadsheet called `awards.txt`  You can add awards to your spreadsheet being sure to use values from each of your enumerations.
+to get the awards and honors from your VIVO into a spreadsheet called `awards.txt`  You can add awards to your spreadsheet being sure to use values from each of your enumerations.
 
-Once you have awards to add to VIVO, run:
+Once you have awards to add to VIVO, use:
 
     python sv.py -a update
     
@@ -51,7 +51,7 @@ To manage awards, your enumerations must be up to date.  Each person, organizati
 If you need to add dates, rerun the dates example with a wider date range.
 
 To add a single person, name of an award, or an organization conferring an award, use the VIVO web interface.  Update
-the enumerations, add a row to your awards.txt for the new award and run a Simple VIVO update.  
+the enumerations, add a row to your `awards.txt` for the new award and run a Simple VIVO update.  
 
 For example:
 
