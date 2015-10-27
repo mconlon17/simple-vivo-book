@@ -25,6 +25,7 @@
    * [Versions of VIVO](Versions-of-VIVO.md)
    * [Simple VIVO Command Line](Simple-VIVO-Command-Line.md)
    * [Simple VIVO Reserved Column Names](Simple-VIVO-Reserved-Column-Names.md)
+   * [URIs in Updates](URIs-in-Updates.md)
    * [Merging entities](Merging-Entities.md)
    * [Simple VIVO Config File](Simple-VIVO-Config-File.md)
    * [Simple VIVO Test Cases](Simple-VIVO-Test-Cases.md)
