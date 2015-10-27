@@ -8,7 +8,7 @@ uri | Simple VIVO result
 blank | The data on the row will be added.  A uri will be created by Simple VIVO using the `uriprefix`.  The data on the row will be added to VIVO referring to the new uri.
 found uri | The data on the row will update the entity with the found uri.  
 not found uri | The data on the row will be added.  The uri you specified, that was not found in VIVO, will be used.
-invalid uri | IF the value in the uri is not a valid uri, Simple VIVO will stop with an error message.  In particular, the word "None" is not valid in the the uri column.
+invalid uri | If the value in the uri is not a valid uri, Simple VIVO will stop with an error message.  In particular, the word "None" is not valid in the the uri column.
 
 ## Additional Notes
 
