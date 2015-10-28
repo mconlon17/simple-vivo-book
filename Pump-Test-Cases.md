@@ -40,6 +40,6 @@ Unique|	Length|  ADC  | Qual |Examples
 The definitions support various functions through components of the software.  Examples include enumeration and filtering.  Each must be tested.
 
  1. Component tests.  Each software component needs unit tests.
- 1. Filter test.  Unit tests of filters.  Round trip testing of filters.
+ 1. Filter tests.  Unit tests of filters.  Round trip testing of filters.
  1. Enumeration tests.  Unit tests of enumerations.  Round trip testing of enumerations.
  1. Handler tests.  Each handler (photo, TBA) will need unit and integration tests.
