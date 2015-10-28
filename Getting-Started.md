@@ -122,7 +122,6 @@ test with VIVO.  For example:
 	PREFIX ocrer:    <http://purl.org/net/OCRe/research.owl#>
 	PREFIX ocresd:   <http://purl.org/net/OCRe/study_design.owl#>
 	PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
-	PREFIX uf:       <http://vivo.school.edu/ontology/uf-extension#>
 	PREFIX vcard:    <http://www.w3.org/2006/vcard/ns#>
 	PREFIX vitro-public: <http://vitro.mannlib.cornell.edu/ns/vitro/public#>
 	PREFIX vivo:     <http://vivoweb.org/ontology/core#>
@@ -135,7 +134,7 @@ test with VIVO.  For example:
 	2015-10-28 10:26:31.949723 Finish
 	MacBook-Pro-2:vivo-pump mikeconlon$ 
 
-Notice toward the bottom "Simple VIVO is redy for use."  You're good to go!
+Notice toward the bottom "Simple VIVO is ready for use."  You're good to go!
 
 Or the test will respond with one or more error messages.  The most common errors have to do with specification of 
 the configuration file for accessing your VIVO SPARQL API.  In some cases, your VIVO may not be accepting 
