@@ -71,24 +71,77 @@ and `http://profiles.mythical.org/u/grant884001` for a grant.
 Once you have all the pieces in place --  a VIVO, Python, Simple VIVO and the four parameters in your `sv.cfg` file, 
 you can test your setup by going to a command line, and typing:
 
-     python sv.py --test
+     python sv.py -a test
 
 `sv.py` is the name of the Simple VIVO program.  
 
 The word `python` is required.  It tells the system "I'm asking you to run a Python program and here's the name"
 
-The `--test` command line parameter tells Simple VIVO that you would like to run the test to see that Simple 
+The `-a test` command line parameter tells Simple VIVO that you would like to run the test to see that Simple 
 VIVO is set up correctly.
 
-Simple VIVO will respond with
+Simple VIVO will respond with a list of the parameters configured for Simple VIVO and the results of a connection
+test with VIVO.  For example:
 
-All tests pass.  Good to go!
+	Last login: Tue Oct 27 09:18:07 on ttys000
+	MacBook-Pro-2:~ mikeconlon$ cd PycharmProjects/
+	MacBook-Pro-2:PycharmProjects mikeconlon$ cd vivo-vagrant/
+	MacBook-Pro-2:vivo-vagrant mikeconlon$ ls
+	CHANGELOG.md	README.md	Vagrantfile	provision	work
+	MacBook-Pro-2:vivo-vagrant mikeconlon$ cd ../vivo-pump
+	MacBook-Pro-2:vivo-pump mikeconlon$ python sv.py -a test
+	2015-10-28 10:26:31.231997 Start
+	2015-10-28 10:26:31.319732 Test results
+	Update definition	pump_def.json read.
+	Source file name	pump_data.txt.
+	Enumerations read.
+	Filters	True
+	Verbose	False
+	Intra field separator	;
+	Inter field separator	|	
+	VIVO SPARQL API URI	http://localhost:8080/vivo/api/sparqlQuery
+	VIVO SPARQL API username	vivo_root@school.edu
+	VIVO SPARQL API password	xxxxxxxx
+	VIVO SPARQL API prefix	
+	PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+	PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+	PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
+	PREFIX owl:      <http://www.w3.org/2002/07/owl#>
+	PREFIX swrl:     <http://www.w3.org/2003/11/swrl#>
+	PREFIX swrlb:    <http://www.w3.org/2003/11/swrlb#>
+	PREFIX vitro:    <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#>
+	PREFIX wgs84:    <http://www.w3.org/2003/01/geo/wgs84_pos#>
+	PREFIX bibo:     <http://purl.org/ontology/bibo/>
+	PREFIX c4o:      <http://purl.org/spar/c4o/>
+	PREFIX cito:     <http://purl.org/spar/cito/>
+	PREFIX event:    <http://purl.org/NET/c4dm/event.owl#>
+	PREFIX fabio:    <http://purl.org/spar/fabio/>
+	PREFIX foaf:     <http://xmlns.com/foaf/0.1/>
+	PREFIX geo:      <http://aims.fao.org/aos/geopolitical.owl#>
+	PREFIX obo:      <http://purl.obolibrary.org/obo/>
+	PREFIX ocrer:    <http://purl.org/net/OCRe/research.owl#>
+	PREFIX ocresd:   <http://purl.org/net/OCRe/study_design.owl#>
+	PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
+	PREFIX uf:       <http://vivo.school.edu/ontology/uf-extension#>
+	PREFIX vcard:    <http://www.w3.org/2006/vcard/ns#>
+	PREFIX vitro-public: <http://vitro.mannlib.cornell.edu/ns/vitro/public#>
+	PREFIX vivo:     <http://vivoweb.org/ontology/core#>
+	PREFIX scires:   <http://vivoweb.org/ontology/scientific-research#>
+	Prefix for RDF file names	pump
+	Uriprefix for new uri	http://vivo.school.edu/individual/n
+	Sample new uri	http://vivo.school.edu/individual/n2898507243
+	Simple VIVO is ready for use.
+	2015-10-28 10:26:31.949635 Test end
+	2015-10-28 10:26:31.949723 Finish
+	MacBook-Pro-2:vivo-pump mikeconlon$ 
 
-Or it will respond with one or more error messages.  The most common errors have to do with specification of 
+Notice toward the bottom "Simple VIVO is redy for use."  You're good to go!
+
+Or the test will respond with one or more error messages.  The most common errors have to do with specification of 
 the configuration file for accessing your VIVO SPARQL API.  In some cases, your VIVO may not be accepting 
 connections, or your username and password may not be authorized, or your uri pattern may be invalid.  
 Work with your system administrator to get VIVO set up properly and the parameters needed to access VIVO set up 
-properly in your sv.crg file.
+properly in your `sv.cfg` file.
 
 ## Tests passed and good to go
 
