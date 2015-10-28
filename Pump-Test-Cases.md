@@ -19,21 +19,21 @@ Unique|	Length|  ADC  | Qual |Examples
  Yes  |    1  |   Add | No   | Building Abbreviation
  Yes  |    1  | Change| No   | Building Abbreviation
  Yes  |    1  | Delete| No   | Building Abbreviation
- Yes  |    2  |   Add | No   | Org Mailing Address Zip
- Yes  |    2  | Change| No   | Org Mailing Address Zip
- Yes  |    2  | Delete| No   | Org Mailing Address Zip
- Yes  |    3  |   Add | No   | Grant Start Date
- Yes  |    3  | Change| No   | Grant Start Date
- Yes  |    3  | Delete| No   | Grant Start Date
+ Yes  |    2  |   Add | No   | Publication date
+ Yes  |    2  | Change| No   | Publication date
+ Yes  |    2  | Delete| No   | Publication date
+ Yes  |    3  |   Add | No   | Grant Start Date; Org zip code
+ Yes  |    3  | Change| No   | Grant Start Date; Org zip code
+ Yes  |    3  | Delete| No   | Grant Start Date; Org zip code
  No   |    1  |   Add | No   | Person type(s); Person Research Area(s)
- No   |    1  | Change| No   |Person type(s); Person Research Area(s)
- No   |    1  | Delete| No   |Person type(s); Person Research Area(s)
- No   |    2  |   Add | No   |Grant Investigators; Org URL
- No   |    2  | Change| No   |Grant Investigators; Org URL
- No   |    2  | Delete| No   |Grant Investigators; Org URL
- No   |    3  |   Add | No   |Do we have an example?
- No   |    3  | Change| No   |?
- No   |    3  | Delete| No   |?
+ No   |    1  | Change| No   | Person type(s); Person Research Area(s)
+ No   |    1  | Delete| No   | Person type(s); Person Research Area(s)
+ No   |    2  |   Add | No   | Grant Investigators
+ No   |    2  | Change| No   | Grant Investigators
+ No   |    2  | Delete| No   | Grant Investigators
+ No   |    3  |   Add | No   | No example
+ No   |    3  | Change| No   | No example
+ No   |    3  | Delete| No   | No example
 
 # Functional and component tests
 
