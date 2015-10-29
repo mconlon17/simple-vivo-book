@@ -42,4 +42,4 @@ The definitions support various functions through components of the software.  E
  1. Component tests.  Each software component needs unit tests.
  1. Filter tests.  Unit tests of filters.  Round trip testing of filters.
  1. Enumeration tests.  Unit tests of enumerations.  Round trip testing of enumerations.
- 1. Handler tests.  Each handler (photo, TBA) will need unit and integration tests.
+ 1. Handler tests.  Each handler (photo, PubMed, DOI) will need unit and integration tests.
