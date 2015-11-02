@@ -19,12 +19,12 @@ Unique|	Length|  ADC  | Qual |Examples
  Yes  |    1  |   Add | No   | Building Abbreviation
  Yes  |    1  | Change| No   | Building Abbreviation
  Yes  |    1  | Delete| No   | Building Abbreviation
- Yes  |    2  |   Add | No   | Publication date
- Yes  |    2  | Change| No   | Publication date
- Yes  |    2  | Delete| No   | Publication date
- Yes  |    3  |   Add | No   | Grant Start Date; Org zip code
- Yes  |    3  | Change| No   | Grant Start Date; Org zip code
- Yes  |    3  | Delete| No   | Grant Start Date; Org zip code
+ Yes  |    2  |   Add | No   | Grant start date
+ Yes  |    2  | Change| No   | Grant start date
+ Yes  |    2  | Delete| No   | Grant start date
+ Yes  |    3  |   Add | No   | Org zip code
+ Yes  |    3  | Change| No   | Org zip code
+ Yes  |    3  | Delete| No   | Org zip code
  No   |    1  |   Add | No   | Person type(s); Person Research Area(s)
  No   |    1  | Change| No   | Person type(s); Person Research Area(s)
  No   |    1  | Delete| No   | Person type(s); Person Research Area(s)
