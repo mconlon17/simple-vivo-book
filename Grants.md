@@ -1,4 +1,4 @@
-# Managing Grants
+# Managing Grants in Your VIVO using Simple VIVO
 
 Grants are a bit more complex than some of the other entities we have been managing using Simple VIVO.  Grants
 have the following columns:
