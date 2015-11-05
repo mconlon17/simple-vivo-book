@@ -1,4 +1,4 @@
-# Managing Education Background
+# Managing Educational Background
 
 Here we describe how to manage educational background using Simple VIVO.  Degrees, institution granting the degree, person receiving the degree, date of the degree, and field of study.  Should be very similar in concept and complexity to positions.
 
