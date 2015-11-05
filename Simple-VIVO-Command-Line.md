@@ -16,7 +16,7 @@ You will see the display below.
       -a [ACTION], --action [ACTION]
                             desired action. get = get data from VIVO. update =
                             update VIVO data from a spreadsheet. summarize = show
-                            def summary. serialize = serial version of the pump
+                            def summary. serialize = serial version of the pump. test = test connection to VIVO.
       -d [DEFN], --defn [DEFN]
                             name of definition file
       -i [INTER], --inter [INTER]
