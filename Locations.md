@@ -1,4 +1,4 @@
-# Locations 
+# Managing Locations
 
 VIVO can store information about locations such as cities, buildings, and campuses.  By providing latitude
 and longitude information for your locations you will be able to make maps and show information based on 
