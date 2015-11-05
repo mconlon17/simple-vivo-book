@@ -1,4 +1,4 @@
-# Awards and Honors
+# Managing Awards and Honors using Simple VIVO
 
 For Awards and Honors, VIVO distinguishes between two ideas:
 
