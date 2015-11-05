@@ -1,4 +1,4 @@
-# People
+# Managing People in VIVO
 
 Each person in VIVO has contact information and other identifying information as expected.
 
