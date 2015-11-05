@@ -1,4 +1,4 @@
-# Managing Teaching in Simple VIVO
+# Managing Teaching using Simple VIVO
 
 To manage teaching in Simple VIVO, you will need to manage a list of courses, and you will need to specify 
 teaching -- who taught what when.
