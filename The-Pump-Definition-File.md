@@ -437,7 +437,7 @@ For the teaching example, the closure defines a second path from the TeachingRol
         ]
     },
 
-Notes:
+### Notes
 
 1.  The course is "reused" by the closure to define a second path from the TeacherRole to the course.  See the 
 column_def for the first path.
