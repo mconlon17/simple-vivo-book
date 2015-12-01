@@ -62,7 +62,6 @@ Uniform Resource Locator.  An address that can be used on the Internet to unique
 # URI
 Uniform Resource Identifier.  A pattern that can be used to uniquely identify a resource.  All URL are URI, but not all URI identify resources on the the network.  Some URI are designed for internal or off-line use.
 
-
 # VIVO
 VIVO is an open source, semantic web software system for creating and maintaining an integrated 
 view of the scholarly work of an organization.  See [the VIVO Home Page](http://vivoweb.org)
