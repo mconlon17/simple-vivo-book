@@ -8,15 +8,15 @@ One Simple VIVO definition can
 be used to manage all your locations, or you may choose to use source files specific to different kinds of locations -- 
 one for cities, one for buildings, one for campuses.
 
-Many types of things are locations.  The most common are campuses, buildings, countries, and cities, but see the file `examples\locations\location_types.txt` for a complete list of VIVO location types.
+Many types of things are locations.  The most common are campuses, buildings, countries, and cities, but see the 
+file `examples/locations/location_types.txt` for a complete list of VIVO location types.
 
 Regardless of the type of location, each location has:
 
 1. a name
 1. one or more types such as building, campus, country or city
 1. within -- an indication that one location is within another.  For example, a city is within a country, a 
-building is 
-within a campus.
+building is within a campus.
 1. latitude.  Negative is south.
 1. longitude.  Negative is west.
 
@@ -60,10 +60,10 @@ A sample file of buildings at the University of Florida is provided in uf_buildi
 
 ## Add US Cities to VIVO
 
-Add cities in the United States with population over 100,000 in 2015 to VIVO.  List came from Wikipedia,updated with
-cities over 100,000 in Puerto Rico.
+Add cities in the United States with population over 100,000 in 2015 to VIVO.  The list came from Wikipedia, updated 
+with cities over 100,000 in Puerto Rico.
 
-Each city has a name, a state, latitude and longitude.
+Each city has a name, a state, a latitude and a longitude.
 
 Look up the state in VIVO through an enum.  If not found, throw an error -- all the states need to be in VIVO.  VIVO
 is missing District of Columbia and Puerto Rico.  These need to be added by hand before the cities can be added.
