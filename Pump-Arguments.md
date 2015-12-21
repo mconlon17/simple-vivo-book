@@ -23,16 +23,11 @@ is, the password to the account specified by the `username`
 
 `prefix`  gives the SPARQL prefix for your VIVO.  SPARQL queries typically use PREFIX statements to simplify the 
 specification of URI in SPARQL statements.  The value of the prefix parameter should be the collection of PREFIX 
-statements used at your VIVO.  Note that formatting of the parameter -- each PREFIX statement begins on a new line, 
-including the first one.  Each is indented by four spaces.  This is recommended.
+statements used at your VIVO.
  
-`action` is the desired Pump action.  There are five choices:  test, update, get, summarize and serialize.  Often 
-these are specified on the command line to override the value in the config file and make explicit what action 
-Simple VIVO is performing.
-
-`verbose` is set to `true` to have the Pump produce output regarding the status and progress of its actions.  The 
-default is `false` which produces limited output showing the the datetime the action started, the number of entities 
-effected, and the datetime the action was completed.
+`action` is the desired Pump action.  There are five choices:  test, update, get, summarize and serialize.  When the
+pump is used by Simple VIVO, the action is typically specified on the command line to override the value in the 
+config file and make explicit what action Simple VIVO is performing.
 
 `inter` is the inter field separator character used for your spreadsheets.  a CSV file would have `inter = ,`, a 
 tab separated spreadsheet (recommended) would have `inter = tab`.  Note the word "tab".  the Simple VIVO config file 
@@ -42,9 +37,12 @@ character "|".  Pipe and tab are used as separators because these characters do 
 `intra` is the intra field separator character used to separate multiple values in a single spreadsheet cell.  
 The default is a semi-column.
 
-`filters`  set to `true` indicates that filters specified in the definition file should be used.  Set to `false` 
+`filter`  (default `true`) set to `true` indicates that filters specified in the definition file should be used.  Set to `false` 
 indicates filters are not to be used.
 
+`rdfprefix` indicates the naming convention to be used by the pump when creating RDF files.  The Pump will create
+add and sub RDF with the names `rdfprefix`_add.rdf and `rdfprefix`_sub.rdf
+
 `uriprefix`  indicates the format of any URI to be created by the update process.  URI will have random digits 
-following the prefix.  So, for example, if your prefix is `http://vivo.school.edu/n`, Simple VIVO will create 
+following the prefix.  So, for example, if your uriprefix is `http://vivo.school.edu/n`, Simple VIVO will create 
 new entities with URI that look like `http://vivo.school.edu/nxxxxxxxx` where `xxxxxxxx` are random digits.
