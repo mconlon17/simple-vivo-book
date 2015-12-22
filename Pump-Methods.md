@@ -43,7 +43,6 @@ Update definition	pump_def.json read.
 Source file name	pump_data.txt.
 Enumerations read.
 Filters	True
-Verbose	False
 Intra field separator	;
 Inter field separator		
 VIVO SPARQL API URI	http://localhost:8080/vivo/api/sparqlQuery
