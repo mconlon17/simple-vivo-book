@@ -1,29 +1,29 @@
 # Simple VIVO Test Cases
 
-Simple VIVO is a command line interface to the Pump.
+Simple VIVO can be tested using `test_sv.py` in the `tests` directory.  Various tests are performed and test results
+reported along with timings of each test.
 
-# Command Line Tests
+## Running the Tests
 
-Function  | Verbose | Def    |  Spreadsheet | Example
-----------|---------|--------|--------------|--------
-get       |    Yes  |  None  |   None       | sv -v 
-get       |    Yes  |  None  |   Good       | sv
-get       |    Yes  |  None  |   Poor       | sv
-get       |    Yes  |  Good  |   None       | sv
-get       |    Yes  |  Good  |   Good       | sv
-get       |    Yes  |  Good  |   Poor       | sv
-get       |    Yes  |  Poor  |   None       | sv
-get       |    Yes  |  Poor  |   Good       | sv
-get       |    Yes  |  Poor  |   Poor       | sv
-get       |    No   |  None  |   None       | sv
-get       |    No   |  None  |   Good       | sv
-get       |    No   |  None  |   Poor       | sv
-get       |    No   |  Good  |   None       | sv
-get       |    No   |  Good  |   Good       | sv
-get       |    No   |  Good  |   Poor       | sv get building_def.json bar
-get       |    No   |  Poor  |   None       | sv get foo
-get       |    No   |  Poor  |   Good       | sv get foo buildings.txt
-get       |    No   |  Poor  |   Poor       | sv get foo bar
-update    |    Same |  Same  |   Same       | Same 18 cases
-summarize |    Same |  Same  |   Same       | Same 18 cases
-serialize |    Same |  Same  |   Same       | Same 18 cases
+To run the tests, open a terminal window, navigate to the `tests` directory and use:
+
+    python test_sv.py
+    
+Test results will be displayed in your terminal window.  Sample test output is shown below.  Three items are displayed
+for each test:
+
+1. The name of the test.  `config not found` is the name of a test that demonstrates Simple VIVO behaviour when 
+the configuration file is not found.
+1.  The return code.  Simple VIVO returns `0` if no errors occured.  Simple VIVO returns `1` if errors occurred.
+For the `config not found` test, the configuration file was not found.  This is an error.  Simple VIVO produces
+a return code of `1`.
+1. The time in seconds to complete the test.  Timings were done with a Simple VIVO and a VIVO Vagrant running 
+on a MacBook.
+
+
+              config not found 	1 	0.112974
+     definition file not found 	1 	0.044921
+                          help 	0 	0.052848
+         source file not found 	1 	0.114163
+                          test 	0 	0.880568
+
