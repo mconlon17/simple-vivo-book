@@ -12,7 +12,12 @@ To add education backgrounds to VIVO, we need to know several pieces of informat
 1. What is the date of the degree?
 1. What is the field of study for the degree?
 
-Each of these attributes is optional.  
+Each of these attributes is optional. 
+ 
+## Edit the Configuration File
+
+Edit the `sv.cfg` file to provide the query parameters for your VIVO.  Your system administrator can help you 
+with this.
 
 ## Managing Enumerations
 
@@ -38,14 +43,13 @@ The python program `make_enum.py` can be used to update four of these enumeratio
 The field of study enumeration is managed by hand -- if you have fields of study that you would like to be able to 
 represent in VIVO, edit the `field_enum.txt` file with a text editor and add a row for each such field of study.
 
-## get and update as always
+## Procedure
 
-1. Edit the `sv.cfg` file to provide the query parameters for your VIVO.  Your system administrator can help you 
-with this.
-1. Run get:  `python sv.py -a get`
-The result will be a `degrees.txt` file which you can open in a spreadsheet to edit the degrees for your people. 
-Every value you enter in each of the columns should be a value in one of the enumerations.  Each column has its 
-own enumeration.
+1. Get the existing educational backgrounds into a spreadsheet.  To do this, run get:  `python sv.py -a get`
+The result will be a `degrees.txt` file.
+1. Edit `degrees.txt` in a spreadsheet program to update the values of existing degrees, or add new degrees -- one
+degree per row. Every value you enter in each of the columns must be a value in one of the enumerations.  Each column 
+has its own enumeration.
 1. Edit your enumerations as needed to provide additional values for degrees and fields of study.  To add 
 universities or other schools to your VIVO and make them available for your education work, use the orgs example 
 to add the organizations, then run make_enum to update your enumerations.  The new schools are now available for 
