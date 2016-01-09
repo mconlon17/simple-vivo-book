@@ -417,7 +417,6 @@ For the teaching example, the closure defines a second path from the TeachingRol
                 "object": {
                     "literal": false,
                     "type": "foaf:Person",
-                    "name": "instructor"
                 }
             },
             {
@@ -437,6 +436,6 @@ For the teaching example, the closure defines a second path from the TeachingRol
 
 1.  The course is "reused" by the closure to define a second path from the TeacherRole to the course.  See the 
 column_def for the first path.
-2.  The first step in the path is through the instructor.  The object needs a name as an intermediate.
+2.  The first step in the path is through the instructor.
 3.  The instructor step in the path does not need a qualifier.  It is coming from the row entity and there is only 
 one entity that has the predicate relationship to the row entity. 
