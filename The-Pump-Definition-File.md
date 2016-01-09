@@ -267,10 +267,6 @@ xsd:anyURI  | For literal values that are URI, wuch as web page addresses
 
 True if the object is a literal value, False if the object is a reference to an entity.
 
-##### name
-
-Used to indicate the name of an intermediate object in a multi-step path
-
 ##### enum
 
 Used to specify enumerations that are used to substitute one value for another.  Enumerations are very handy in VIVO 
