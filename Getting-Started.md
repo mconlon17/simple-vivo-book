@@ -4,14 +4,14 @@ To start using Simple VIVO to manage data in your VIVO, you will need the follow
 
 1. A VIVO to use for data management.  VIVO is typically deployed at the organizational level, much like a web server.  Simple VIVO is used to manage the data in an existing VIVO.  The existing VIVO may be "empty" (as delivered VIVO, has a small amount of data pertaining to countries, states and territories of the United States, and data about its own definitions). Simple VIVO can also be used with VIVO Vagrant, a VIVO which can be installed on your local machine.
 Your VIVO must allow the VIVO SPARQL API to be used.  By default, this is turned off.  Your system administrator 
-will need to turn it on and proved you with a username and password for you to use to manage data in your VIVO.
+will need to turn it on and provide you with a username and password for you to use to manage data in your VIVO.
 1. You will need to be able to run Python from a command line.  If this is new to you, a system administrator can 
-help you prepare your machine, and show you how. To. Use the command line.
-1. You will need to have Simple VIVO installed on your machine.  This is very simple to do.  Once Python is 
-installed, you can type: pip install simple-VIVO 
-1. You will need to edit the Simple VIVO configuration file sv.cfg to provide four pieces of information:
-    1. The URL of your VIVO SPARQL API.  Your system administrator will have this value.
-    1. The username required to access your VIVO SPARQL
+help you prepare your machine, and show you how to use the command line.
+1. You will need to have the VIVO Pump and Simple VIVO installed on your machine.  This is very simple to do.  Once 
+Python is installed, you can type: `pip install vivo-pump` at the command line prompt.
+1. You will need to edit the Simple VIVO configuration file `sv.cfg` to provide four pieces of information:
+    1. The URL of your VIVO SPARQL API.  Your system administrator will have this value
+    1. The username required to access your VIVO SPARQL API
     1. The password required to access your VIVO SPARQL API
     1. The URI pattern you would like Simple VIVO to use when created new URI (see below)
 
@@ -68,28 +68,27 @@ and `http://profiles.mythical.org/u/grant884001` for a grant.
 
 ## Testing your set up
 
-Once you have all the pieces in place --  a VIVO, Python, Simple VIVO and the four parameters in your `sv.cfg` file, 
-you can test your setup by going to a command line, and typing:
+Once you have all the pieces in place --  a VIVO, Python, the Pump and Simple VIVO, and the four parameters in 
+your `sv.cfg` file, you can test your setup by going to a command line, and typing:
 
      python sv.py -a test
 
 `sv.py` is the name of the Simple VIVO program.  
 
-The word `python` is required.  It tells the system "I'm asking you to run a Python program and here's the name"
+The word `python` is required.  It tells the system "I'm asking you to run a Python program and here's its name"
+
+The `sv.py` is required.  It tells python "the name of the program I would like to run is `sv.py` and you can 
+find it in the current directory."  If `sv.py` is not in the current directory, you can change to the directory it is
+in to run it, or use a path to indicate where `sv.py` is located.
 
 The `-a test` command line parameter tells Simple VIVO that you would like to run the test to see that Simple 
 VIVO is set up correctly.
 
+If you have python installed and `sv.py` where python will find it, and you have typed the command line correctly, 
 Simple VIVO will respond with a list of the parameters configured for Simple VIVO and the results of a connection
 test with VIVO.  For example:
 
-	Last login: Tue Oct 27 09:18:07 on ttys000
-	MacBook-Pro-2:~ mikeconlon$ cd PycharmProjects/
-	MacBook-Pro-2:PycharmProjects mikeconlon$ cd vivo-vagrant/
-	MacBook-Pro-2:vivo-vagrant mikeconlon$ ls
-	CHANGELOG.md	README.md	Vagrantfile	provision	work
-	MacBook-Pro-2:vivo-vagrant mikeconlon$ cd ../vivo-pump
-	MacBook-Pro-2:vivo-pump mikeconlon$ python sv.py -a test
+	mymac$ python sv.py -a test
 	2015-10-28 10:26:31.231997 Start
 	2015-10-28 10:26:31.319732 Test results
 	Update definition	pump_def.json read.
@@ -132,11 +131,12 @@ test with VIVO.  For example:
 	Simple VIVO is ready for use.
 	2015-10-28 10:26:31.949635 Test end
 	2015-10-28 10:26:31.949723 Finish
-	MacBook-Pro-2:vivo-pump mikeconlon$ 
+	mymac$ 
 
 Notice toward the bottom "Simple VIVO is ready for use."  You're good to go!
 
-Or the test will respond with one or more error messages.  The most common errors have to do with specification of 
+If things aren't quite right, the test will respond with one or more error messages.  The most common errors 
+have to do with specification of 
 the configuration file for accessing your VIVO SPARQL API.  In some cases, your VIVO may not be accepting 
 connections, or your username and password may not be authorized, or your uri pattern may be invalid.  
 Work with your system administrator to get VIVO set up properly and the parameters needed to access VIVO set up 
