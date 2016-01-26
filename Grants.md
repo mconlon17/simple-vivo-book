@@ -4,13 +4,17 @@ Grants are a bit more complex than some of the other entities we have been manag
 have the following columns:
 
 1. Local award ID -- that is, what number, or other identifier, does your institution give this grant
-1. Title -- the title of the grant.  This should be spelled out -- do not use abbreviations.  There is no length limit.
+1. Title -- the title of the grant.  This should be spelled out -- do not use abbreviations.  There is no length 
+limit.
 1. Direct costs -- all years -- a number without a dollar sign and with decimals as needed.  For example `43506.45`
 1. Total award amount -- all years, direct plus indirect.  Same format as direct costs.
-1. Principal investigators -- one or more principal investigators.  Investigators are specified using their orcid ID and separated by your intra field delimiter.
-1. Co-principal investigators -- any number of co-principal investigators.  Specified using orcid, separated by intra field delimiter.
+1. Principal investigators -- one or more principal investigators.  Investigators are specified using their orcid ID 
+and separated by your intra field delimiter.
+1. Co-principal investigators -- any number of co-principal investigators.  Specified using orcid, separated by 
+intra field delimiter.
 1. Investigators -- any number of investigators.  Specified using orcid, separated by intra field delimiter.
-1. Concepts -- any number of concepts identifying subject areas for the grant.  Concepts are specified by name as they appear in the`concept-enum.txt` file. Concepts are separated by the intra field delimiter
+1. Concepts -- any number of concepts identifying subject areas for the grant.  Concepts are specified by name as 
+they appear in the`concept-enum.txt` file. Concepts are separated by the intra field delimiter
 1. Start date in the form yyyy-mm-dd
 1. End date in the form yyyy-mm-dd
 1. Administering unit.  Specified by name as they appear in `dept_enum.txt`
@@ -28,13 +32,16 @@ as described below.
 1. `date_enum.txt` lists the year-month-day dates in your VIVO by date value
 1. `dept_enum.txt` lists your institutions organizations by name
 1. `orcid_enum.txt` lists your investigators by ORCID.  ORCID is used to identify your investigators.  
-Each should have an ORCID, and the ORCID for each investigator should be in your VIVO.  See examples/people for
+Each should have an ORCID, and the ORCID for each investigator should be in your VIVO.  See examples/people regarding
 adding ORCID to people.
 1. `sponsor_enum.txt` lists the sponsors (funding organizations) in your VIVO.
 
-Each attribute is optional.  You may add a grant with very little information and provide improved values for attributes in subsequent updates.
+Each attribute is optional.  You may add a grant with very little information and provide additional or 
+improved values for attributes in subsequent updates.
 
-As always, your spreadsheet values will be non-blank if you would like to specify a value for the attribute, blank if you would like to have VIVO remain unchanged, and "None" if you would like to remove the attribute's value from VIVO.
+As always, your spreadsheet values will be non-blank if you would like to specify a value for the attribute, 
+blank if you would like to have VIVO remain unchanged, and "None" if you would like to remove the attribute's 
+value from VIVO.
 
 ## The Basic steps
 
