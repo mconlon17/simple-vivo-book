@@ -27,6 +27,7 @@
    * [Simple VIVO Reserved Column Names](Simple-VIVO-Reserved-Column-Names.md)
    * [URIs in Updates](URIs-in-Updates.md)
    * [Merging entities](Merging-Entities.md)
+   * [Managing More Data](Managing-More-Data.md)
    * [Simple VIVO Config File](Simple-VIVO-Config-File.md)
    * [Simple VIVO Test Cases](Simple-VIVO-Test-Cases.md)
 * [The Pump](Home.md)
