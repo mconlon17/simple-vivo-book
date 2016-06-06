@@ -144,7 +144,6 @@ properly in your `sv.cfg` file.
 
 ## Tests passed and good to go
 
-With tests passed, you are ready to use Simple VIVO.  Please read the introduction to Simple VIVO that follows, 
-and then try one or more examples.
+With tests passed, you are ready to use Simple VIVO.  Please read the introduction to Simple VIVO that follows, and then try one or more examples.
 
 
