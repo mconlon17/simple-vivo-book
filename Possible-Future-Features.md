@@ -2,22 +2,18 @@
 
 As we gain experience with Simple VIVO and the underlying Pump software, we'll collect ideas for future features here.  There are no promises here, and some ideas that seemed worthwhile at the time, may fade in importance as experience grows.
 
-Some of the issues are for the "end user," which for Simple VIVO is typically the VIVO data manager.  Some are for programmers using the Pump.  And some are for the developers of the software to allow the software to grow and improve in a reasonable way.
+Some of the features are for the "end user," which for Simple VIVO is typically the VIVO data manager.  Some are for programmers using the Pump.  And some are for the developers of Simple VIVO and the Pump to allow the software to grow and improve in a reasonable way.
 
-Features are numbered simply to make referring to them easier.  The numbering does not imply an ordering.
+Features are numbered to make referring to them easier.  The numbering does not imply an ordering.
 
-*Note:  Some people may ask "why have future features here rather than in the issues?  After all, you can mark 
-issues as "future" and exclude them from various lists.  And the answer is that I found that mixing the issues 
-together was inconvenient and misleading.  GitHub does not have the ability to save queries of the issues, 
-so each time I wanted to see the current issues, I had to explicitly exclude the issues marked "later".  
-Eventually I decided to gather the "later" features here and close them out of the issues list, reserving the 
+*Note:  Some people may ask "why have future features here rather than in the GitHub issues?  After all, you can mark issues as "future" and exclude them from lists.  And the answer is that I found that mixing the issues together was inconvenient and misleading.  GitHub does not have the ability to save queries of the issues, so each time I wanted to see the current issues, I had to explicitly exclude the issues marked "later".  Eventually I decided to gather the "later" features here and close them out of the issues list, reserving the 
 issues list for features under active development.*
 
 # Possible Future Features
 
 1. Add an ontology diagram to each example to show what is going on.
 1. Add SPARQL queries and visualizations to each example to reward data managers for getting their data into VIVO.
-1. Add handler for photos. When a user specifies a photo filename as data, a handler should be available as part of the definition that can process the file, create a thumbnail, put the thumbnail and photo in appropriate places in the VIVO file system and generate the appropriate RDF.
+1. Add handler for photos. When a user specifies a photo filename as data, a handler should process the file, create a thumbnail, put the thumbnail and photo in appropriate places in the VIVO file system and generate the appropriate RDF.
 1. Refactor two_step and three_step as recursive.  Pump should support any path length through recursive application of path. Need to be clever about "one back" and one forward" and then it should be feasible. Will take a good lucid morning.
 1. Simple VIVO should read and write from stdin and stout respectively.  Support stdin and stdout as sources and sinks for source data.  As in: `filter | filter | python sv.py > file`
 1. Simple VIVO should put data directly into VIVO with the need to write a file of RDF to be loaded manually.
@@ -29,6 +25,5 @@ issues list for features under active development.*
 1. Implement American Universities data management in `uf_examples`. American Universities is a web site at UF used to list "all" accredited universities in the United States offering bachelor's degrees and above.  See http://clas.ufl.edu/au 
     1. Create separate def for american universities.  Web address, name, type
     2. Add `rdf:type` for american universities to UF VIVO
-    3. Add python script for producing american universities web insert
-As a UF Example. It uses a UF ontology extension
+    3. Add python script for producing american universities web insert as a UF Example. It uses a UF ontology extension
 1. Refactor the CSV object as a true class.  Rewrite all CSV access.  Class should support column order and empty datasets.
