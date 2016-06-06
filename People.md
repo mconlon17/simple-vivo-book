@@ -31,7 +31,7 @@ with additional attributes in the future.
 
 ## Enumerations
 
-1. `concept_enum.txt` -- used to list possible subject areas for the advising relationship
+1. `concept_enum.txt` -- used to list possible research areas for the person
 1. `person_types.txt` -- used to list possible person types with abbreviations for each
 
 ## Adding and Updating people
@@ -46,4 +46,4 @@ you specify is not found, it will not be added.  To add new values to enumeratio
 then update the enumerations, then add them to the person.
 1. Update VIVO with your improved spreadsheet using `python -a update`
 
-Repeat these steps as needed to add additional mentoring relationships to VIVO.
+Repeat these steps as needed to manage the people in your VIVO.
