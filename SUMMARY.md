@@ -1,4 +1,4 @@
-# Table of Contents
+# Summary
 
 * [Introduction](README.md)
 * [Preface](Preface.md)
@@ -37,6 +37,7 @@
    * [Pump Methods](Pump-Methods.md)
    * [Pump Definition File](The-Pump-Definition-File.md)
    * [Pump Test Cases](Pump-Test-Cases.md)
+   * Writing Definitions
 * [Possible Future Features](Possible-Future-Features.md)
 * [Additional Resources](Additional-Resources.md)
 * [Glossary](GLOSSARY.md)
