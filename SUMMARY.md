@@ -33,10 +33,10 @@
 * [The Pump](Home.md)
    * [Using the Pump](Using-the-Pump.md)
    * Writing Definitions
+   * [Pump Definition File](The-Pump-Definition-File.md)
    * [The Pump API](The-Pump-API.md)
    * [Pump Arguments](Pump-Arguments.md)
    * [Pump Methods](Pump-Methods.md)
-   * [Pump Definition File](The-Pump-Definition-File.md)
    * [Pump Test Cases](Pump-Test-Cases.md)
 * [Possible Future Features](Possible-Future-Features.md)
 * [Additional Resources](Additional-Resources.md)
