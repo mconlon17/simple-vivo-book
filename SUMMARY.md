@@ -32,7 +32,7 @@
    * [Simple VIVO Test Cases](Simple-VIVO-Test-Cases.md)
 * [The Pump](Home.md)
    * [Using the Pump](Using-the-Pump.md)
-   * Writing Definitions
+   * [Writing Definitions](writing_definitions.md)
    * [Pump Definition File](The-Pump-Definition-File.md)
    * [The Pump API](The-Pump-API.md)
    * [Pump Arguments](Pump-Arguments.md)
