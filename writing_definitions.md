@@ -3,7 +3,7 @@ The Pump uses a definition file to define how data can be retrieved from VIVO to
 
 Round tripping is the ability to get data from VIVO to a spreadsheet, edit that spreadsheet and use the same definition to update VIVO.  You can also start from the update -- adding new data to VIVO, and then using the same definition to get the data from VIVO.
 
-In this chapter we will see simple examples first.  You should try these simple examples.  And you should check your work.
+In this chapter we will see simple examples first.  You should try these simple examples.  And you should check your work.  See [
 
 ## The basic structure of definition files
 
