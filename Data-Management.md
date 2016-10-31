@@ -2,7 +2,7 @@
 
 Data management a collection of processes and permissions and talents applied. To the task of creating quality data.  Quality data is data is data that is correct and of value to consumers of the data.  
 
-## Focusing effort on high value data
+## Focus effort on high value data
 
 VIVO represents the scholarship of your organization.  It can represent a very broad collection of various kinds of activities of scholars -- the production of scholarly works, the acquisition of research funding, the teaching and mentoring of trainees,  service to the profession, as well as details about the training and background of each person participating in the scholarship of the organization.  Simple VIVO, as described in this book, focuses the collection and management of data on attributes of scholars that have high value for organizations.  This focus enables us to manage data with a reasonable amount of effort.  
 
