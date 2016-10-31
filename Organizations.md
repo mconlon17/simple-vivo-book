@@ -1,16 +1,17 @@
 # Managing Organizations
 
-You will want to have organizations in your VIVO for a number of reasons:
+You will want to have organizations in your VIVO.  Here are some reasons:
 
-1. Organizations are the units of your institution -- your colleges, academic departments, administrative
-units, and laboratories.  By representing your organization and its structure (which organizations are parts of others) you will be able to produce reports and visualizations based on your organizational structure, and answer questions such as number of faculty per organization, number of mentors, expertise at the organizational level, productivity and other other assessments.
-1. Organizations are where your people had positions prior to being at your institution.
-1. Organizations are where your people were educated.
+1. Your colleges, academic departments, administrative units, and laboratories are organizations in VIVO. VIVO can represent the organizational chart of your institution.
+1. Organizations are where your people had positions before being at your institution.
+1. Your people received degrees from organizations.
 1. Organizations provided grant funding to your organization.
-1. Organizations where your faculty have collaborators that they work with on scholarship.
+1. Your faculty have collaborators at other organizations.
 1. Organizations are employers of your graduates.
 
-To put organizations in VIVO, you will want to have a spreadsheet of the organizations that you can use to manage the organizational data.  As organizations come and go, add and remove them from your spreadsheet.  As more information about organizations becomes available, or as organizational information changes (contact information, web pages, etc), make the updates in your spreadsheet.  Use Simple VIVO to update VIVO using the values in your spreadsheet (see below).
+Reports and visualizations use organizational data.
+
+Create a spreadsheet of the organizations that you can use to manage the organizational data.  As organizations come and go, add and remove them from your spreadsheet.  As contact information changes, update your spreadsheet.  Use Simple VIVO to update VIVO using the values in your spreadsheet (see below).
 
 Simple VIVO always allows three things to appear in a cell in a spreadsheet containing attributes for an organization:
 
