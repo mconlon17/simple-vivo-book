@@ -172,11 +172,10 @@ Follow one of the provided scenarios to manage data in your VIVO. The most commo
 * [Teaching](Courses.md)
 * [Mentoring](Mentoring.md)
 * [Memberships](/memberships.md)
+* [Editorial Activities](/editorial-activity.md)
 * [Service](Service.md)
 
 ## Adding Scenarios
 
-Adding new scenarios requires a knowledge of the VIVO ontologies, as well as knowledge of the [Pump Definition File](The-Pump-Definition-File.md).  Studying the provided scenarios and the descriptions provided in this wiki  
-will get you started.  You will find support on-line on the VIVO email lists  
-and in the [VIVO Wiki](http://wiki.duraspace.org/display/VIVO).
+Adding new scenarios requires a knowledge of the VIVO ontologies, as well as knowledge of the [Pump Definition File](The-Pump-Definition-File.md).  Studying the provided scenarios and the descriptions provided in this wiki will get you started.  You will find support on-line on the VIVO email lists and in the [VIVO Wiki](http://wiki.duraspace.org/display/VIVO).
 
